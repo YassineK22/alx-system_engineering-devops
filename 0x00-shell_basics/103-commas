@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n ./, ../, ; (ls -1d */ | LC_COLLATE=C sort -df | sed 's|/$||' | paste -sd ',' -)
+printf './, ../, '; ls -1d */ | sed 's|/$||' | sort -df | paste -sd ',' -;
