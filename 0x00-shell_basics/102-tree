@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | sort -d | tr "\n" "," | sed "s/,$/\n/"
+mkdir -p welcome/to/school
