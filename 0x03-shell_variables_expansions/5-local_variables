@@ -1,2 +1,2 @@
 #!/bin/bash
-printenv
+diff <(printenv | sort) <(set | sort) | grep '<' | awk '{ print  }'
